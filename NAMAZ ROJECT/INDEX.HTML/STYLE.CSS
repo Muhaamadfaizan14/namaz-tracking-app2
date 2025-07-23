@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* optional: hides scrollbars */
+}
+
+.background {
+  background-image: url(https://i.pinimg.com/474x/46/db/81/46db81f2eca19d1c2750b4a831360e67.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.logincon{
+  width: 400px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Glass effect */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Backdrop blur inside */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin-top: 200px;
+}
+
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.loginform input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.loginform button{
+  padding: 14px 20px;         /* height control via padding */
+  height: auto;               /* ensure auto height */
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffffcc;
+  font-weight: bold;
+  font-size: 18px;            /* larger text => larger button */
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
